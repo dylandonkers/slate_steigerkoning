@@ -1,0 +1,138 @@
+// StyleSheet
+
+//schema clean-------------------------------------------------------------------------------------------------------------------------------------------------
+
+//base---------
+	$base-backgroundColor:#fff;
+	$base-backgroundColor2:#000;
+	$base-backgroundColor2-2:#262727;
+	$base-backgroundImage:url("../img/background.png");
+	$headertop:#ffde00;
+	$base-navBack: #F5F5F5;
+	$base-borderColor1: #000;
+	$base-shadow: 0 0px 100px 1px #000;;
+	$button-color1: #000;
+	$button-color2: #ffde00;
+
+//font---------
+	$font-typografie: Quicksand;
+	$font-titel-color: #7A6E6E;
+	$font-subTitel-color: #fff;
+	$font-paragraafTitel-color: #fff;
+// a ----------
+	$a-normal:#7A6E6E;
+	$a-style:#7A6E6E;
+//eind clean-------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+//base -------------------------------------------------------------------------------------------------------------------------------------------------------
+h4{
+	color:$font-titel-color;
+}
+body{
+	 background-image: $base-backgroundImage ; 
+	 font-family: $font-typografie; 
+}
+article,{
+	background: $base-backgroundColor;
+}
+.container-all{
+	box-shadow: $base-shadow;
+	padding-left:0;
+	padding-right:0;
+}
+.header-boven-contact{	
+	background:$headertop;
+} 
+
+.footer-wrapper{
+	background:$base-backgroundColor;
+} 
+.header-midden-nav{
+	background: $base-navBack;
+	border-top: 2px solid $base-borderColor1;
+	border-bottom: 2px solid $base-borderColor1;
+	box-shadow: 0px 2px 16px $base-shadow; 
+}
+.Navigation-listItem{
+  a{
+  	color: $a-normal;
+  }
+}
+.Navigation-list--dropdown{
+	background:$base-navBack;
+}
+.Navigation-listItem.is-active{
+	background:$a-style;
+	a{
+	color:$base-navBack;
+	}
+}
+
+
+.Navigation-listItem:hover{
+	background:lighten($a-style, 10%);
+	a.Navigation-link{
+		color:$base-navBack;
+	}
+}
+.Navigation-listItem--hasDropdown:hover{
+	background:lighten($a-style, 10%);
+	ul{
+		a.Navigation-link{
+		color:$a-normal;
+		}
+	}
+	ul:hover{
+		a.Navigation-link{
+			color:$base-navBack;
+		}
+	}
+
+}
+.Navigation-listItem--hasDropdown.is-active:hover{
+	a.Navigation-link{
+			color:$base-navBack;
+	}
+}
+
+.Nav-toggle {
+  .Icon.Icon--inline {
+   	fill:$base-borderColor1;
+  }
+}
+.header-onderkant{
+	box-shadow: 0px 2px 16px $base-shadow;
+	border-bottom: 2px solid $base-borderColor1;
+	background:$base-backgroundColor;
+}
+.threecolumns-wrapper{
+	background: $base-backgroundColor;
+}
+.fullwidth-wrapper{
+	background:$base-backgroundColor;
+}
+.button1, .button3, .gform_button{
+	background:$button-color1;
+	color:$a-normal;
+}
+.button2, {
+	background:$button-color2;
+	color:$a-normal;
+}
+.button:hover{
+	background:lighten($a-style, 10%);
+	color: $base-navBack;
+}
+.footer-wrapper{
+	border-top: 2px solid $base-borderColor1;
+	background: $base-backgroundColor2;
+}
+.footer-bottom-wrapper{
+	background: $base-backgroundColor2-2;
+}
+// eind base -------------------------------------------------------------------------------------------------------------------------------------------------
+

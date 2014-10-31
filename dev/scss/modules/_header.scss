@@ -1,0 +1,100 @@
+//header -->
+//------------------------------------------------------------------------------------------------------------------- -->
+
+//boven header
+//------------------------------------------------------------------------------------------------------------------- -->
+.header-boven{}
+
+.header-boven-contact{
+  border-bottom: 50px solid #e5c701;
+  padding:4% 0 2% 0;
+  position: relative;
+}
+.header-boven-contact-wrapper1{
+}
+.top-profile{
+  position: absolute;
+  background: #000;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 40%;
+}
+.prijsText{
+  margin:0;
+  color: #fff;
+   position: absolute;
+  top: 30%;
+  right: 60%;
+}
+.shop-icon{
+  width: 15%;
+  position: absolute;
+  top: 22%;
+  right: 35%;
+}
+.profile-icon{
+  width: 15%;
+  position: absolute;
+  top: 22%;
+  right: 10%;
+}
+.header-boven-contact-logo{
+  width: 200%;
+  margin-left:8%;
+}
+.header-title{
+  position: absolute;
+  left: 3.5%;
+  bottom:-44%;
+  color:#000;
+  a{
+    color:#000;
+  }
+}
+.header-boven-contact-wrapper2{
+  padding:7% 0 0 0;
+  position: relative;
+}
+.nummer-icon{
+  width: 5%;
+  position: absolute;
+  left:0%;
+  top:93%; 
+} 
+.email-icon{
+
+  width:5%;
+  position: absolute;
+  left:40%;
+  top:93%;
+
+}
+.header-boven-contact-nummer{
+  text-decoration: none;
+  position: absolute;
+  left: 7%;
+
+}
+.header-boven-contact-email{
+  text-decoration: none;
+  position: absolute;
+  left: 47%;
+}
+//------------------------------------------------------------------------------------------------------------- -->
+// einde boven header
+
+//midden header
+//------------------------------------------------------------------------------------------------------------- -->
+  // zie scss : _navigation
+//------------------------------------------------------------------------------------------------------------- -->
+//einde midden header
+
+//onderkant header 
+//------------------------------------------------------------------------------------------------------------- -->
+.header-onderkant{
+  padding:0% 0 0 0 ;
+  height: 256px !important;
+}
+//------------------------------------------------------------------------------------------------------------- -->
+//einde onderkant header
