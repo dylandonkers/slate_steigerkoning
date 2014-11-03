@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: fourolumns
+Template Name: fourcolumns
 */
 ?>
 
@@ -11,15 +11,15 @@ Template Name: fourolumns
 			<article class="u-gridRow" id="post-<?php the_ID(); ?>">
 					<article class="column-top 4columns-top u-gridCol3">
 						 <img class="columns-top-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/top1.jpg" >
-						<a class="button1" href="#">Verkoop</a>
+						<a class="button1" href="/categories/1315#Verkoop">Verkoop</a>
 					</article>
 					<article class="column-top 4columns-top u-gridCol3">
 							 <img class="columns-top-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/top1.jpg" >
-						<a class="button1" href="#">Verhuur</a>
+						<a class="button1" href="/categories/1295#Verhuur">Verhuur</a>
 					</article>
 					<article class="column-top 4columns-top u-gridCol3">
 							 <img class="columns-top-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/top1.jpg" >
-						<a class="button1" href="#">Keuring</a>
+						<a class="button1" href="/categories/1295#Keuringen">Keuringen</a>
 					</article>
 					<article class="column-top 4columns-top u-gridCol3">
 							 <img class="columns-top-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/top1.jpg" >
@@ -37,7 +37,7 @@ Template Name: fourolumns
 					<article class="column-bottom u-gridCol3">
 						<a class="button2" href="#">Projecten</a>
 						<img class="columns-bottom-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bottom1.jpg" >
-						<p class="columns-bottom-text">De steigerkoning BV kan indien U dit wenst een steigermeubel op maat maken.</p>
+						<p class="columns-bottom-text">De steigerkoning BV kan indien u dit wenst een steigermeubel op maat maken.</p>
 						<a class="button1" href="#">Lees meer ></a>
 					</article>
 					<article class="column-bottom u-gridCol3">
@@ -55,7 +55,7 @@ Template Name: fourolumns
 					<article class="column-bottom u-gridCol3">
 						<a class="button2" href="#">Handleidingen</a>
 							<img class="columns-bottom-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bottom1.jpg" >
-						<p class="columns-bottom-text">U kunt hier al onze handleidingen over steigers vinden. zodat u er ten alle tijden uit kunt komen met uw steiger</p>
+						<p class="columns-bottom-text">U kunt hier al onze handleidingen over steigers vinden, zodat u er te allen tijden uit kunt komen met uw steiger.</p>
 						<a class="button1" href="#">Lees meer ></a>
 					</article>
 			</article>

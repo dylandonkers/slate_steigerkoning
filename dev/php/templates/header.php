@@ -49,7 +49,8 @@
 <!-- ------------------------------------------------------------------------------------------------------------------- -->
 <header class="header-boven">
     <div class="header-boven-contact u-gridContainer u-gridRow">
-        <div class="top-profile">
+		<div class="top-profile">
+			<div id="shoppingcart"></div>
             <p class="prijsText">€ 00,00 </p>
             <a href="#"><img class="shop-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/winkel.png" ></a>
             <a href="#"><img class="profile-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/profile.png" ></a>

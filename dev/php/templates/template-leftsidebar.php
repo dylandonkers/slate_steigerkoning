@@ -6,9 +6,11 @@ Template Name: Page w/ sidebar on left
 
 <?php get_header(); ?>
 
-	<div class="u-gridContainer">
+	<div class="threecolumns-wrapper u-gridContainer">
+		<div class="u-gridCol3">
 		<?php get_sidebar(); ?>
-		<div>
+		</div>
+		<div class="u-gridCol9">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<article class="Content Content--leftsidebar" id="post-<?php the_ID(); ?>">
 				<h2><?php the_title(); ?></h2>

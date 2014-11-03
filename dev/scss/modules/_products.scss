@@ -1,0 +1,64 @@
+.product {
+
+}
+.product-image {
+	overflow: hidden;
+}
+.product-image img {
+	display: block;
+	height: 200px;
+}
+
+.product.span4 { //3 koloms categorieën
+	margin-bottom: 20px;
+	border-bottom: 1px solid black;
+	.product-data-container {
+//		@include: clearfix;
+		.product-title{ 
+			height: 50px;
+			font-weight: bold;
+		}
+		.product-detail-button {
+			float: left;
+			width: 50%;
+		}
+		.product-price {
+			float: right;
+			text-align: right;
+			width: 50%;
+		}
+	}
+}
+
+.product.span12 { // 1 koloms categorieën
+	@include clearfix;
+	margin-bottom: 20px;
+	.product-image {
+		float: left;
+		width: 50%;
+	}
+	.product-data-container {
+		float:right;
+		width: 50%;
+
+	}
+}
+
+.webshop_pagination {
+	@include clearfix;
+
+	.next, .prev {
+		display: block;
+		border: 1px solid black;
+		padding: 10px;
+		border-radius: 6px;
+	}
+
+	.next {
+		float: right;
+	}
+	.prev {
+		float: left;
+	}
+
+}
