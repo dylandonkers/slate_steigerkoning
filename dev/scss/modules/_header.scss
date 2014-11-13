@@ -19,6 +19,7 @@
   right: 0;
   width: 20%;
   height: 40%;
+  border-bottom:15px solid #262727;
 }
 .prijsText{
   margin:0;
@@ -98,3 +99,26 @@
 }
 //------------------------------------------------------------------------------------------------------------- -->
 //einde onderkant header
+
+//winkel wagen -------------------------------------------------------------------------------------------------- -->
+#shoppingcart{
+}
+.ropdown-menu{}
+.dropdown-toggle{
+      color: #fff;
+      padding-left:22px;
+}
+.dropdown-menu{
+  display: none; 
+  margin-top:10px;
+   padding-left:22px;
+   background:rgb(76, 76, 76);
+   color: #fff;
+     border-bottom:15px solid #262727;
+   a{
+    color: #fff;
+   }
+
+
+ }
+ a#expand-cart.dropdown-menu{}

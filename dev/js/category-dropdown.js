@@ -1,4 +1,5 @@
 jQuery(document).ready(function($) {
+
   //unset all the links of non-leafs
   $('.category-subcategory > .categories > .category-item > a, .product-categories > .category-item > a').each(function() {
     if ($(this).parent('.category-item').next().hasClass('category-subcategory')) { //non-leaf
