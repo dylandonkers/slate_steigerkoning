@@ -38,6 +38,7 @@
     <!-- Wordpress head function -->
     <?php wp_head(); ?>
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/filter-renderer.js"></script>
 
   </head>
   <body <?php body_class(); ?> >
