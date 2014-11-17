@@ -1,50 +1,42 @@
 <footer>	
-	<div class="">
-		<div class="footer-wrapper u-gridContainer">
-			<div class="u-gridRow">
-				<div class="u-gridCol8">
-					<a href="#"><img class="footer-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-footer.png" ></a>
-				</div>
-				<div class="u-gridCol4">
-					<?php if ( is_active_sidebar( 'footer-widgets' ) ) : ?>
-					<div class="Footer-inner u-gridRow">
-						<?php dynamic_sidebar( 'footer-widgets' ); ?>
-					</div>
-					<?php endif; ?>
+	<div class="footer-wrapper u-gridContainer" >
+		<div class="u-gridRow" >
+			<div class="u-gridCol12">
+				<a href="#"><img class="footer-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-footer.png" ></a>
 			</div>
 		</div>
-				<div class="u-gridCol4">
-					<ul>
-						<li><h4>Adres</h4></li>
-						<li>Vijfhuizenberg 121</li>
-						<li>4708 AJ Roosendaal</li>
-						<li><a href="tel:08002929927">0800 2929927</a></li>
-						<li><a href="mailto:info@ladderensteigerkoning.nl">info@ladderensteigerkoning.nl</a></li>
-					</ul>
-				</div>
-				<div class="u-gridCol4">
-					<ul>
-						<li><h4>Openingstijden</h4></li>
-						<li>Ma t/m Vr 07:30 - 17:30</li>
-						<li>Za 10:00 - 16:00</li>
-						<li>Zo Gesloten</li>
-					</ul>
-				</div>
-				<div class="u-gridCol4">
-					<?php if ( is_active_sidebar( 'footer-widgets' ) ) : ?>
-					<div class="Footer-inner u-gridRow">
-						<?php dynamic_sidebar( 'footer-widgets' ); ?>
-					</div>
-					<?php endif; ?>
-				</div>
+		<div class="u-gridRow">
+			<div class="u-gridCol4">
+				<ul>
+					<li><h4>Adres</h4></li>
+					<li>Vijfhuizenberg 121</li>
+					<li>4708 AJ Roosendaal</li>
+					<li><a href="tel:08002929927">0800 2929927</a></li>
+					<li><a href="mailto:info@ladderensteigerkoning.nl">info@ladderensteigerkoning.nl</a></li>
+				</ul>
 			</div>
-			
-		<div class="footer-bottom-wrapper u-gridContainer">
-				<!-- Copyright info -->
-					<p class="footer-bloginfo">&copy; <?php bloginfo('name'); ?> <?php echo date("Y"); ?> - Website & SEO door 
-							<a href="http://www.lokaalgevonden.nl" target="_blank">LokaalGevonden</a>
-					</p>
+			<div class="u-gridCol4">
+				<ul>
+					<li><h4>Openingstijden</h4></li>
+					<li>Ma t/m Vr 07:30 - 17:30</li>
+					<li>Za 10:00 - 16:00</li>
+					<li>Zo Gesloten</li>
+				</ul>
+			</div>
+			<div class="u-gridCol4">
+				<?php if ( is_active_sidebar( 'footer-widgets' ) ) : ?>
+				<div class="Footer-inner u-gridRow">
+					<?php dynamic_sidebar( 'footer-widgets' ); ?>
+				</div>
+				<?php endif; ?>
+			</div>
 		</div>
+	</div>	
+	<div class="footer-bottom-wrapper u-gridContainer">
+		<!-- Copyright info -->
+		<p class="footer-bloginfo">&copy; <?php bloginfo('name'); ?> <?php echo date("Y"); ?> - Website & SEO door 
+				<a href="http://www.lokaalgevonden.nl" target="_blank">LokaalGevonden</a>
+		</p>
 	</div>
 </footer>
 

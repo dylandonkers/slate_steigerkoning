@@ -10,7 +10,7 @@
 // allow only one open menu at a time
 // -------------------------------------
 
-$(document).ready(function() {
+jQuery(document).ready(function($) {
 
   // When a dropdown trigger is clicked
   $('.js-navDropdown').click(function(e) {
@@ -41,15 +41,15 @@ $(document).ready(function() {
     e.stopPropagation();
   });
 
-});
 
-// -------------------------------------
-// All clicks that gets to the document
-// will hide all dropdowns
-// -------------------------------------
+	// -------------------------------------
+	// All clicks that gets to the document
+	// will hide all dropdowns
+	// -------------------------------------
 
-$(document).click(function() {
+	$(document).click(function() {
 
-  $(".Navigation-list--dropdown").addClass('is-hidden');
+	  $(".Navigation-list--dropdown").addClass('is-hidden');
 
+	});
 });

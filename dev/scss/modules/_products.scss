@@ -1,3 +1,19 @@
+#sytematic_webshop_categorywidget-3 {
+	margin-top: 40px;
+}
+
+.widget_sytematic_webshop_filterwidget {
+	@include clearfix;
+	margin-top: 40px;
+	.filter_controlgroup {
+		float: left;
+		margin-right: 10px;
+	}
+}
+
+.subcats {
+	display: none;
+}
 .product {
 
 }
@@ -78,6 +94,32 @@
 	.prev {
 		float: left;
 	} 
+
+}
+
+.category {
+	border: 1px solid black;
+	margin-bottom: 20px;
+}
+.category-image {
+	overflow: hidden;
+	border-bottom:15px solid #262727;
+	
+	img {
+		display: block;
+		height: 200px;
+		margin: 0px auto;
+
+	}
+}
+.category-name {
+	height: 120px;
+	font-weight: bold;
+	padding:10px;
+	margin-bottom: 10px;
+	a {
+		color: black;
+	}
 
 }
 // details product page----------------------------------------------------------------------------
@@ -283,8 +325,12 @@
 }
 
 //producten nav -----------------------------------------------------------------------------------
-.category-id-1295, .category-id-1315, .category-id-1319{
-  a{
+
+.widget_sytematic_webshop_categorywidget > .categories > .category-item {
+	margin-top:5%;
+}
+  
+.widget_sytematic_webshop_categorywidget > .categories > .category-item > a{
 	  width: 100%;
 	  padding: 5% 0 0 0;
 	  display: block;
@@ -293,46 +339,36 @@
 	  background: #000;
 	  color:#fff;
 	 }
-}
 .product-categories, .category-level-1{
 	margin-left:0;
 }
-ul.categories > li.category-subcategory > ul.category-level-1 >li{
+ ul.category-level-1 >li{
 	padding:1% 4%;
 	a{
 		color:#fff;
 	}	
 }
 
-ul.categories > li.category-subcategory > ul.category-level-1 >li{
-	list-style-type: square ;
-	
-	list-style-position: inside ;
+ul.category-level-1 >li{
+	list-style-type: none;
 }
-ul.categories > li.category-subcategory > ul.category-level-2 >li{
-	list-style-type: square ;
-	list-style-position: inside ;
+ul.category-level-2 >li{
+	list-style-type: none;
 }
 
-ul.categories > li.category-subcategory > ul.category-level-1 >li.category-item:nth-of-type(odd) {
+ul.category-level-1 >li.category-item:nth-of-type(odd) {
     background: #525656;
 }
-ul.categories > li.category-subcategory > ul.category-level-1 >li.category-item:nth-of-type(even) {
+ul.category-level-1 >li.category-item:nth-of-type(even) {
   	background:rgba(38, 39, 39, 1);
 }
-ul.categories > li.category-subcategory > ul.category-level-1 >li.category-subcategory{
+ul.category-level-1 >li.category-subcategory{
 	background:#fff !important;
 	a{
 		color: #000;
 	}
 }
-.category-id-1315, .category-id-1319{
-	margin-top:5%;
-}
-.category-id-1315, .category-id-1295{
-	list-style-image:url("../img/pijl.png");
-	list-style-position: inside ;
-}
+
 .nav-product-active{
 	border-bottom: 15px solid #e5c701 !important;
 	background: #ffde00 !important;
