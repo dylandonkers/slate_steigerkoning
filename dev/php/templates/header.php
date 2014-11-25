@@ -112,19 +112,23 @@
 
 
 
-
 <!-- onderkant header -->
 <!-- ------------------------------------------------------------------------------------------------------------------- -->
-<header class="header-onderkant u-gridContainer"><!-- onderkant header slider-->
-    <div class="">
-            <div class="Slider"> <!-- Dit is de slider in de onderkant header -->
+<!--
+<header class="header-onderkant u-gridContainer">
+            <div class="Slider">
+                <div class="header-onderkant-slider-image">
+                    <p class="slider-text"><a href="/contact">“Wij monteren en keuren ook. Benieuwd? Neem contact met ons op”</a></p>
                     <img class="header-onderkant-slider-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/header-onderkant-slider-image1.jpg" >
+                </div>
+                <div>
+                    <p class="slider-text"><a href="/verhuur">“De steigerkoning verkoopt en verhuurt alles van hoogwerker tot trap”</a></p>
                     <img class="header-onderkant-slider-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/header-onderkant-slider-image2.jpg" >
-            </div>   <!-- einde slider van de onderkant header -->  
-    </div>     
-</header>
+                </div>
+            </div>  
+</header> -->
 <!-- ------------------------------------------------------------------------------------------------------------------- -->
-<!-- Hier stopt de onderkant header -->
+<!-- Hier stopt de onderkant header --> 
 
 
 <!-- ------------------------------------------------------------------------------------------------------------------- -->

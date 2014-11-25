@@ -14,7 +14,7 @@ Template Name: Page w/ sidebar on left
 			<article class="Content Content--leftsidebar" id="post-<?php the_ID(); ?>">
 
 				<?php dynamic_sidebar('Filter area'); ?>
-				<h2><?php the_title(); ?></h2>
+				<h2 class="menu-product-title pagetitle"><?php the_title(); ?></h2>
 				<div id="filter_search_results"></div>
 				<div>
 					<?php the_content(); ?>

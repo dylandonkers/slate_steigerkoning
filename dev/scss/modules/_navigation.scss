@@ -10,14 +10,19 @@
 
 //nav------------------------------------------------------------------------------------------------->
 .header-midden{}
-.header-midden-nav{}
+.header-midden-nav{
+	background: $base-navBack;
+	border-top: 1px solid $base-borderColor1;
+	border-bottom: 1px solid $base-borderColor1;
+	box-shadow: 0px 2px 16px $base-shadow; 
+}
 .Navigation-list{
   margin:0;
 }
 .Navigation-list--dropdown{
 }
 .Navigation-listItem{
-  float: left;
+  float: left; 
   padding:2%;
   margin:0;
 }

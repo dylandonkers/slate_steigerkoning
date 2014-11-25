@@ -16,13 +16,14 @@
 
 .bx-wrapper {
 position: relative;
-margin: 0 auto 60px;
+
+//margin: 0 auto 60px;
 padding: 0;
 *zoom: 1;
 }
 
 .bx-wrapper img {
-max-width: 100%; 
+width: 100%; 
 display: block;
 }
 
@@ -211,3 +212,18 @@ padding: 10px;
 .Slider {
 	visibility: hidden;
 }
+div.bx-viewport{
+	height:100% !important;
+}
+.slider-text{
+	position: absolute;
+	bottom:0;
+	left:20%;
+	right:20%;
+	background:rgba(0, 0, 0, 0.5);
+	padding:2%;
+	text-align: center;
+	a{
+	color:#fff;
+	}
+} 

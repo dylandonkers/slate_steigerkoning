@@ -1,3 +1,6 @@
+//jquery bxslider.start.js:
+
+
 jQuery(document).ready(function($) {
 
 

@@ -126,6 +126,13 @@ article,{
 .button:hover{
 	background:lighten($a-style, 10%);
 	color: $base-navBack;
+	border-bottom: lighten($a-style, 1%) 15px solid;
+}
+
+.assortiment-link:hover{
+	background:lighten($a-style, 10%);
+	color: $base-navBack;
+	border-bottom: lighten($a-style, 1%) 8px solid;
 }
 .footer-wrapper{
 	border-top: 2px solid $base-borderColor1;
@@ -136,3 +143,6 @@ article,{
 }
 // eind base -------------------------------------------------------------------------------------------------------------------------------------------------
 
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus{
+	background: #000;
+}

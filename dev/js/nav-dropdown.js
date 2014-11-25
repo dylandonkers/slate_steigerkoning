@@ -42,14 +42,14 @@ jQuery(document).ready(function($) {
   });
 
 
-	// -------------------------------------
-	// All clicks that gets to the document
-	// will hide all dropdowns
-	// -------------------------------------
+  // -------------------------------------
+  // All clicks that gets to the document
+  // will hide all dropdowns
+  // -------------------------------------
 
-	$(document).click(function() {
+  $(document).click(function() {
 
-	  $(".Navigation-list--dropdown").addClass('is-hidden');
+    $(".Navigation-list--dropdown").addClass('is-hidden');
 
-	});
+  });
 });

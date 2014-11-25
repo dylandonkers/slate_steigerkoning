@@ -17,8 +17,8 @@
   background: #000;
   top: 0;
   right: 0;
-  width: 20%;
-  height: 40%;
+  width: auto;
+  height: 45px;
   border-bottom:15px solid #262727;
 }
 .prijsText{
@@ -95,7 +95,7 @@
 //------------------------------------------------------------------------------------------------------------- -->
 .header-onderkant{
   padding:0% 0 0 0 ;
-  height: 256px !important;
+  //height: 256px !important;
 }
 //------------------------------------------------------------------------------------------------------------- -->
 //einde onderkant header
@@ -106,7 +106,7 @@
 .ropdown-menu{}
 .dropdown-toggle{
       color: #fff;
-      padding-left:22px;
+      padding:0 22px;
 }
 .dropdown-menu{
   display: none; 

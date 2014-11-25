@@ -16,11 +16,11 @@ Template Name: Contactpage
 					<div class="u-gridRow">					
 						<div class="adress u-gridCol4">
 							<div class="adress-info">
-								<p>slate_base1</p>
-								<p>straatX</p>
-								<p>1234qw den haag</p>
-								<p>Email: dylan@lokaalgevonden.nl</p>
-								<p>Tel: 070123456</p>
+								<p>De steigerkoning</p>
+								<p>Vijfhuizenberg 121</p>
+								<p>4708 AJ Roosendaal</p>
+								<p><a href="mailto:info@ladderensteigerkoning.nl">Email: info@ladderensteigerkoning.nl</a></p>
+								<p><a href="tel:08002929927">Tel: 0800 2929927</a></p>
 							</div>
 	
 						</div>					
