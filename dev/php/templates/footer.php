@@ -1,42 +1,51 @@
 <footer>	
-	<div class="footer-wrapper u-gridContainer" >
-		<div class="u-gridRow" >
-			<div class="u-gridCol12">
-				<a href="#"><img class="footer-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-footer.png" ></a>
-			</div>
-		</div>
-		<div class="u-gridRow">
-			<div class="u-gridCol4">
-				<ul>
-					<li><h4>Adres</h4></li>
-					<li>Vijfhuizenberg 121</li>
-					<li>4708 AJ Roosendaal</li>
-					<li><a href="tel:08002929927">0800 2929927</a></li>
-					<li><a href="mailto:info@ladderensteigerkoning.nl">info@ladderensteigerkoning.nl</a></li>
-				</ul>
-			</div>
-			<div class="u-gridCol4">
-				<ul>
-					<li><h4>Openingstijden</h4></li>
-					<li>Ma t/m Vr 07:30 - 17:30</li>
-					<li>Za 10:00 - 16:00</li>
-					<li>Zo Gesloten</li>
-				</ul>
-			</div>
-			<div class="u-gridCol4">
-				<?php if ( is_active_sidebar( 'footer-widgets' ) ) : ?>
-				<div class="Footer-inner u-gridRow">
-					<?php dynamic_sidebar( 'footer-widgets' ); ?>
+	<div class="footer-wrapper " >
+		<div class="u-gridContainer">
+					<a href="#"><img class="footer-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" ></a>
+			<div class="u-gridRow">
+				<div class="u-gridCol4">
+					<ul>
+						<li><h4>Adres</h4></li>
+						<li>Vijfhuizenberg 121</li>
+						<li>4708 AJ Roosendaal</li>
+						<li><a href="tel:0165-561424">0165-561424</a></li>
+						<li><a href="mailto:info@ladderensteigerkoning.nl">info@ladderensteigerkoning.nl</a></li>
+						<li>KvK: 20074322</li>
+						<li>Btw nr.: 8100 10975 B01</li>
+						<li><a  class="u-gridCol3 footer-link" target="_blank"   href="http://ladderensteigerkoning.lijktmeduidelijk.nl/files/2014/11/Algemene_Voorwaarden.pdf">Algemene voorwaarden</a></li>
+					</ul>
 				</div>
-				<?php endif; ?>
+				<div class="u-gridCol4">
+					<ul>
+						<li><h4>Openingstijden</h4></li>
+						<li>Ma t/m Vr 07:30 - 17:30</li>
+						<li>Za 10:00 - 16:00</li>
+						<li>Zo Gesloten</li>
+					</ul>
+				</div>
+				<div class="u-gridCol4">
+					<?php if ( is_active_sidebar( 'footer-widgets' ) ) : ?>
+					<div class="Footer-inner u-gridRow">
+						<?php dynamic_sidebar( 'footer-widgets' ); ?>
+						<ul class="footer-r">
+							<li><a href="/projecten" >Projecten</a></li>
+							<li><a href="/handleidingen">Handleidingen</a></li>
+							<li><a href="/categories/1340/#Maandactie">Maandactie</a></li>
+							<li><a href="/app">App</a></li>
+						</ul>
+					</div>
+					<?php endif; ?>
+				</div>
 			</div>
 		</div>
 	</div>	
-	<div class="footer-bottom-wrapper u-gridContainer">
+	<div class="footer-bottom-wrapper ">
+		<div class="u-gridContainer">
 		<!-- Copyright info -->
 		<p class="footer-bloginfo">&copy; <?php bloginfo('name'); ?> <?php echo date("Y"); ?> - Website & SEO door 
 				<a href="http://www.lokaalgevonden.nl" target="_blank">LokaalGevonden</a>
 		</p>
+	</div>
 	</div>
 </footer>
 

@@ -10,7 +10,7 @@ Template Name: page
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		<article class="Content Content--fullwidth u-gridContainer" id="post-<?php the_ID(); ?>">
 			<div class="Content-entry u-gridRow ">
-				<h4 class="button3">Hier vind u al onze handleidingen terug.</h4>
+				<h4 class="button3">Hier vindt u al onze handleidingen terug.</h4>
 				<a  class="u-gridCol3" target="_blank"   href="http://ladderensteigerkoning.lijktmeduidelijk.nl/files/2014/11/opbouw_aluminium_rolsteiger.pdf">
 					<div class="pdf-box">	
 						<img  class="pdf-box-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/pdf.png" >

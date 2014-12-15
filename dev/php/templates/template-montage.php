@@ -8,9 +8,9 @@ Template Name: Montage
 
 	<div class="home-wrapper">
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		<article class="Content Content--home" id="post-<?php the_ID(); ?>">
+		<article class="Content Content--home " id="post-<?php the_ID(); ?>">
 
-			<article class="u-gridRow  home-content een-content">
+			<article class="u-gridRow  home-content u-gridContainer">
 				<div class="u-gridCol4 home-content-in">
 						<img class="col-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/full19679039.jpg" >
 				</div>
@@ -22,7 +22,7 @@ Template Name: Montage
 				<a href="#" class="assortiment-link-scroll assortiment-link">Maak uw afspraak</a>
 			</article>
 
-			<article class="u-gridRow  home-content twee-content">
+			<article class="u-gridRow  home-content u-gridContainer">
 				<div class="u-gridCol5 home-content-in">
 					<h4>Montage & demontage</h4>
 					<p>Wij verzorgen in hoofdzaak de montage en demontage van:</p>
@@ -40,7 +40,7 @@ Template Name: Montage
 				<a href="#" class="assortiment-link-scroll assortiment-link">Maak uw afspraak</a>
 			</article>
 
-			<article class="u-gridRow  home-content drie-content">
+			<article class="u-gridRow  home-content u-gridContainer">
 				<div class="u-gridCol6 home-content-in">
 						<h4>Dit doen wij ook!</h4>
 						<p>Naast de vaak ingewikkelde stalen steigers - monteren we ook op aanvraag de systeem en rolsteigers. Uiteraard wordt hierbij de vloerhoogte zo mogelijk aangepast naar de wens van de klant - daar het hier veelal vaste maten betreft is het zeer belangrijk om bij de werkopname goed aan te geven welke werkzaamheden men met de steiger wil gaan doen.</p>
@@ -52,7 +52,7 @@ Template Name: Montage
 				<a href="#" class="assortiment-link-scroll assortiment-link">Maak uw afspraak</a>
 			</article>
 
-			<article class="u-gridRow  home-content vier-content">
+			<article class="u-gridRow  home-content u-gridContainer">
 				<div class="u-gridCol8 home-content-in">
 						<img class="col-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/tandheugelliftt.jpg" >
 				</div>
@@ -64,7 +64,7 @@ Template Name: Montage
 				<a href="#" class="assortiment-link-scroll assortiment-link">Maak uw afspraak</a>
 			</article>
 
-			<article class="u-gridRow  home-content vijf-content"> 
+			<article class="u-gridRow  home-content u-gridContainer"> 
 				<div class="u-gridCol6 home-content-in"> 
 					<h4>Snelbouwsteiger</h4>
 					<p>Let wel dat de steigers tijdig bevestigd en tijdig afgemeld dienen te worden - voor elke montage ontvangt U duidelijk de voorwaarden bij de offerte welke is gespecificeerd in:</p>
@@ -83,9 +83,11 @@ Template Name: Montage
 			</article>
 
 			<div class="u-gridRow home-content-form">						
-						<p class="contact-page-p">Afspraak of vragen? Neem dan hieronder contact met ons op. </p>
+							<p class="contact-page-p">Afspraak of vragen? Neem dan hieronder contact met ons op. </p>
+						<div class="u-gridContainer">
 						<?php the_content(); ?>
 						<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
+					</div>
 			</div>
 				<!--<div>
 					<?php the_content(); ?>

@@ -8,9 +8,9 @@ Template Name: projecten
 
 	<div class="home-wrapper">
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		<article class="Content Content--home" id="post-<?php the_ID(); ?>">
+		<article class="Content Content--home " id="post-<?php the_ID(); ?>">
 
-			<article class="u-gridRow  home-content een-content projecten-montage">
+			<article class="u-gridRow  home-content u-gridContainer projecten-montage">
 				<div class="u-gridCol6 home-content-in">
 					<h4>Hangbruggen</h4>
 					<p>De Steigerkoning BV verzorgt na het doen van een werkopname op velen locaties de montage van steigers. Echter daar dit niet altijd mogelijk is doordat de werkzaamheden slechts van korte duur zijn of doordat het werk erg hoog is en men toch op een scherpe wijze het werk wil aanbieden zetten we steeds vaker hangbruggen in. Vooral in grote steden met hoogbouw is dit een uitkomst zo hebben we anno 2013 veel werk gehad bij het Stadskantoor U trecht waar we met speciale hangbakken hebben gehangen met 80 meter hijskabels. Ook hebben we voor de firma ZNR de hangbruggen verzorgt voor het vervangen van de kozijnen aan het St Franciscus ziekenhuis te Roosendaal. <br /><br />We kunnen met diversen soorten ophangpunten werken:</p>	
@@ -26,7 +26,7 @@ Template Name: projecten
 				<a href="#" class="assortiment-link-scroll assortiment-link">Maak uw afspraak</a>
 			</article>
 
-			<article class="u-gridRow  home-content twee-content projecten-montage">
+			<article class="u-gridRow  home-content u-gridContainer projecten-montage">
 				
 				<div class="u-gridCol6 home-content-in ">
 						<img class="col-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/image1.jpg" >
@@ -45,7 +45,7 @@ Template Name: projecten
 				<a href="#" class="assortiment-link-scroll assortiment-link">Maak uw afspraak</a>
 			</article>
 
-			<article class="u-gridRow  home-content drie-content">
+			<article class="u-gridRow  home-content u-gridContainer">
 				<div class="u-gridCol6 home-content-in">
 						<h4>Gevelsteiger</h4>
 						<p>Deze steigers zijn geschikt voor kleine renovatie dus ideaal voor schilder en stucwerk maar wordt ook vaak gebruikt voor creeren dakrandbeveiliging voor de dakdekker en voor gevelwerkzaamheden voegersbedrijven. De Steiger is absoluut niet geschikt om te metselen en men kan ook ansoluut niet met een kruiwagen over de werkvloer rijden hiervoor kan men best de stalen variant Tube-Lock stalen steiger inzetten</p>
@@ -56,7 +56,7 @@ Template Name: projecten
 				<a href="#" class="assortiment-link-scroll assortiment-link">Maak uw afspraak</a>
 			</article>
 
-			<article class="u-gridRow  home-content vier-content">
+			<article class="u-gridRow  home-content u-gridContainer">
 				<div class="u-gridCol6 home-content-in">
 						<img class="col-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bouwhekken.jpg" >
 				</div>
@@ -69,7 +69,7 @@ Afmeting hekwerk 350 x 200 mm geleverd met kunstof stabielvoet en klemsets. Toeg
 				<a href="#" class="assortiment-link-scroll assortiment-link">Maak uw afspraak</a>
 			</article>
 
-			<article class="u-gridRow  home-content vijf-content projecten-montage"> 
+			<article class="u-gridRow  home-content u-gridContainer projecten-montage"> 
 				<div class="u-gridCol6 home-content-in"> 
 					<h4>Inpakken</h4>
 					<p>Wanneer men aan het einde van het jaar nog aan grote projecten is gestart en het slechte weer zijn intreden doet zien we vaak dat het plaatsen van een kapconstructie geen overbodige zaak is. 
@@ -84,7 +84,7 @@ Afmeting hekwerk 350 x 200 mm geleverd met kunstof stabielvoet en klemsets. Toeg
 				<a href="#" class="assortiment-link-scroll assortiment-link">Maak uw afspraak</a>
 			</article>
 
-			<article class="u-gridRow  home-content vier-content">
+			<article class="u-gridRow  home-content u-gridContainer">
 				<div class="u-gridCol6 home-content-in">
 						<img class="col-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/gevelreiniging.jpg" >
 				</div>
@@ -95,7 +95,7 @@ Afmeting hekwerk 350 x 200 mm geleverd met kunstof stabielvoet en klemsets. Toeg
 				<a href="#" class="assortiment-link-scroll assortiment-link">Vraag offerte aan</a>
 			</article>
 
-			<article class="u-gridRow  home-content vijf-content"> 
+			<article class="u-gridRow  home-content u-gridContainer"> 
 				<div class="u-gridCol6 home-content-in"> 
 					<h4>Divers transport</h4>
 					<p>Met de door ons gebruikte transportmiddelen kunnen we diversen materialen laden:</p>
@@ -111,14 +111,14 @@ Afmeting hekwerk 350 x 200 mm geleverd met kunstof stabielvoet en klemsets. Toeg
 				<a href="#" class="assortiment-link-scroll assortiment-link">Maak uw afspraak</a>
 			</article>
 
-			<article class="u-gridRow  home-content twee-content projecten-bruid">
+			<article class="u-gridRow  home-content u-gridContainer projecten-bruid no-border">
 				<div class="u-gridCol12 home-content-in ">
 						<h4>Bruidsauto</h4>
 						<p>Ook verziorgt de Steigerkoning BV voor U voor een zeer schappelijk tarief een blitse traouwauto met chaufeur of chaufeuse. Laat wel wel even weten waar U voorkeur naar uitgaat en de route welke men moet rijden zodat we een passende offerte kunnen maken.
 						U kunt hierbij kiezen voor;</p>
 				</div>
 			</article>
-			<article class="u-gridRow  home-content twee-content projecten-montage bruid-pro">
+			<article class="u-gridRow  home-content u-gridContainer projecten-montage bruid-pro">
 				<div class="u-gridCol8 home-content-in">
 						<img class="col-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bruidsauto.jpg" >
 				</div>
@@ -126,7 +126,7 @@ Afmeting hekwerk 350 x 200 mm geleverd met kunstof stabielvoet en klemsets. Toeg
 					<p>Cadillac Coupe Deville van 1963 9 ltr V 8</p>
 				</div>
 			</article>
-			<article class="u-gridRow  home-content twee-content projecten-montage">
+			<article class="u-gridRow  home-content u-gridContainer projecten-montage">
 				<div class="u-gridCol4 home-content-in">
 						<p>Cadillac Coupe Deville van 1963 9 ltr V 8</p>
 				</div>
@@ -136,7 +136,7 @@ Afmeting hekwerk 350 x 200 mm geleverd met kunstof stabielvoet en klemsets. Toeg
 				<a href="#" class="assortiment-link-scroll assortiment-link">Maak uw afspraak</a>
 			</article>
 
-			<article class="u-gridRow  home-content een-content ">
+			<article class="u-gridRow  home-content u-gridContainer ">
 				<div class="u-gridCol6 home-content-in ">
 					<img class="col-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/steigertafel_02.jpg" >
 				</div>
@@ -149,8 +149,10 @@ Afmeting hekwerk 350 x 200 mm geleverd met kunstof stabielvoet en klemsets. Toeg
 
 			<div class="u-gridRow home-content-form">						
 						<p class="contact-page-p">Afspraak of vragen? Neem dan hieronder contact met ons op. </p>
-						<?php the_content(); ?>
-						<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
+						<div class="u-gridContainer">
+							<?php the_content(); ?>
+							<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
+						</div>
 			</div>
 			
 				<!--<div>

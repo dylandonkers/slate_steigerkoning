@@ -11,10 +11,14 @@
 //nav------------------------------------------------------------------------------------------------->
 .header-midden{}
 .header-midden-nav{
+	
+}
+.header-midden-nav-back{
 	background: $base-navBack;
-	border-top: 1px solid $base-borderColor1;
-	border-bottom: 1px solid $base-borderColor1;
-	box-shadow: 0px 2px 16px $base-shadow; 
+	border-top: 4px solid $base-borderColor1;
+	-webkit-box-shadow: 0px 3px 13px -1px rgba(50, 50, 50, 0.71);
+-moz-box-shadow:    0px 3px 13px -1px rgba(50, 50, 50, 0.71);
+box-shadow:         0px 3px 13px -1px rgba(50, 50, 50, 0.71);
 }
 .Navigation-list{
   margin:0;
@@ -23,8 +27,8 @@
 }
 .Navigation-listItem{
   float: left; 
-  padding:2%;
-  margin:0;
+  padding:1%;
+  margin-right: 1%;
 }
 .Navigation-link{
   margin:0 auto;

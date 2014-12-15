@@ -9,28 +9,189 @@
 }
 .image-qr{
 	display: block;
-	width: 50%;
+	width: 30%;
 	margin: 5%;
 }
 .image-google{
 	display: block;
-	width: 50%;
+	width: 30%;
 	margin: 5%;
 } 
-.App-iphone{
+.App-iphone{ 
 	width: 100%;
 	margin: 0;
 }
-
-
+.app-article{
+	margin-top:2%;
+}
 .category-level-1 {
 	margin-left: 10px;
-}
+} 
 
 .category-level-2 {
 	margin-left: 20px;
 }
 // home -------------------------------------------------------------------------
+.home-top {
+	background: #3b3c3e;
+	padding-right:0;
+	position: relative;
+	z-index: -2;
+	ul{
+		 list-style: url("../ico/vink.svg") inside;
+		 li{
+		 	p{
+		 		margin-top: -25px;
+				margin-left: 35px;
+		 	}
+		 }
+	}
+}
+.home-top-left{
+	margin-right:0;
+	background-image: url("../img/foto-top.jpg");
+	height: 306px;
+	position: relative;
+	z-index: -1;
+}
+.home-top-title-wrapper{
+	position: absolute;
+	text-align: right;
+	top: 40%;
+	right: 14%;
+
+}
+.home-top-left-title1{
+	color: #fff;
+	font-size: 20px;
+	 text-transform: uppercase;
+	 margin: 0;
+}
+.home-top-left-title2{
+color: white;
+font-size: 11px;
+margin: 0;
+}
+.home-top-right{
+	width:34.1%;
+}
+.home-top-ul{
+	li{
+	color: #fff;
+	padding: 7% 0 7% 20%;
+	border-top: solid 2px #fff;
+
+	 text-transform: uppercase;
+	}
+	li:last-child{
+		border-bottom: solid 2px #fff;
+	}
+}
+.home-content-box{
+	ul{
+		margin: 0;
+	}
+}
+.home-welkom-box{
+	margin-top:2%;
+
+	fieldset{
+		margin: 0;
+		border-bottom: none;
+		border-left:none;
+		border-right: none;
+		border-top:2px solid #323335; 
+		position: relative;
+		z-index: 2;
+
+	}
+	legend{
+		font-size: 20px;
+		color:#323335;
+		font-weight: bold;
+		margin: 0 2%;
+		padding: 0 5px;
+	}
+	.home-content-thunb{
+		fieldset{
+			border-top: 2px solid #fff;
+		}
+		legend{
+			color: #fff;
+		}
+		p{
+			color: #fff;
+			padding: 0 5%;
+		}
+	}
+
+}
+.background-thunb-title{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	background: #323335;
+	height: 35px;
+}
+.home-content-thunb{
+	height: 200px;
+	margin-bottom: 2%;
+	position: relative;
+	border-bottom: solid 4px #FED300;
+}
+.home-content-thunb-title{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 2% 3%;
+	background: #ffd400;
+	color: #323335;
+}
+.thunb1{
+	background-image: url("../img/keuringb.jpg"); 
+	background-size:100%;
+}
+.thunb2{
+	background-image: url("../img/montageb.jpg");
+		background-size:100%;
+}
+.thunb3{
+	background-image: url("../img/verhuurb.jpg");
+		background-size:100%;
+}
+.thunb4{
+	background-image: url("../img/verkoopb.jpg");
+		background-size:100%;
+}
+.thunb5{
+	background-image: url("../img/projectenb.jpg");
+		background-size:100%;
+}
+.thunb6{
+	background-image: url("../img/handleidingenb.jpg");
+		background-size:100%;
+}
+.thunb7{
+	background-image: url("../img/maandactieb.jpg");
+		background-size:100%;
+}
+.thunb8{ 
+	background-image: url("../img/appb.jpg");
+		background-size:100%;  
+}
+
+
+
+.home-content-welkom{
+	height: auto;
+	padding:3%;
+	h4{
+		margin:0;
+	}
+
+}
 .home-wrapper{
 	margin: 0;
 	h2, p{
@@ -38,10 +199,11 @@
 	}
 }
 .home-content{
-	padding: 3% 3%;
-	height: 335px;
-	position:relative;
-	clear:left;
+	padding: 3%;
+height: 335px;
+position: relative;
+clear: left;
+border-bottom: 0 solid #323335;
 }
 .home-content-in{
 	height:100%;
@@ -71,33 +233,14 @@
 -moz-box-shadow:    0px 18px 12px -7px rgba(50, 50, 50, 0.85);
 box-shadow:         0px 18px 12px -7px rgba(50, 50, 50, 0.85);
 }
-.een-content{
-	background: #ECECEC;
-}
-.twee-content{
-	background: #BDC3C7;
-}
-.drie-content{
-	background: #fff;
-}
-.vier-content{
-	background: #96A5A6;
-}
-.vijf-content{
-	background: #DADFE1;
-}
-.verhuur-content{
-	background: #fff;
-}
 .assortiment-link{
-	padding: 1% 2% 0 2%;
-	background: #ffde00;
-	border-bottom: 8px solid #e5c701;
-	color: #000;
-	position: absolute;
-	bottom: 0px;
-	right: 0;
-	z-index:3;
+	color: #323335;
+position: absolute;
+bottom: 0px;
+right: 0px;
+z-index: 3;
+padding: 1% 2%;
+background: none repeat scroll 0% 0% #FED300;
 }
 .button-link{
 	float: right;
@@ -116,8 +259,10 @@ box-shadow:         0px 18px 12px -7px rgba(50, 50, 50, 0.85);
 	p.contact-page-p{
 		width: 100%;
 		text-align: center;
-		background: #000;
-		color: #fff;
+		background: none repeat scroll 0% 0% #323335;
+		color: #FFF;
+		margin-top: -5px;
+		border-top: 5px solid #FED300;
 	}
 	#gform_wrapper_1{
 		padding:3%;
@@ -131,10 +276,11 @@ box-shadow:         0px 18px 12px -7px rgba(50, 50, 50, 0.85);
 .menu-product-title{
 	margin: 0;
 	margin-bottom: 1.6%;
-	background: #FFDE00;
+	background: #323335;
 	font-size: 14px;
-	border-bottom: 15px solid #E5C701;
-	padding: 1.5% 0 0 2%;
+	padding: 0.9% 0 0.9% 2%;
+	margin-top: 2.4%;
+	color: #fff;
 }
 //projecten ---------------------------------------------------------------------
 .steigermeubels-imgs{
@@ -195,4 +341,36 @@ margin-bottom: 20%;
 		padding: 2% 0 4% 0 !important;
 	}
 }
+@media all and (max-width: 700px) {  
+	.home-top-right{
+		width: 100%;
+	}
+	.home-top-ul{
+		li{
+			padding: 2% 0 2% 35%;
+		}
+	}
+	.sidebar-winkel{
+		display: none;
+	}
 
+}
+@media all and (max-width: 320px) {  
+	.home-top-ul{
+		li{
+			padding: 2% 0 2% 18%;
+		}
+	}
+	.home-top-title-wrapper {
+   		 position: absolute;
+   		 text-align: left;
+    	top: 34%;
+   		 left: 6%;
+   		 right: 0;
+	}
+
+}
+
+.no-border{
+	border: none !important;
+}

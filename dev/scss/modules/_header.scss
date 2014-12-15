@@ -6,20 +6,26 @@
 .header-boven{}
 
 .header-boven-contact{
-  border-bottom: 50px solid #e5c701;
-  padding:4% 0 2% 0;
+  padding:1% 0 1% 0;
   position: relative;
 }
+.header-boven-contact-back{
+  background: #DADFE1;
+  
+}
+
 .header-boven-contact-wrapper1{
 }
 .top-profile{
   position: absolute;
-  background: #000;
-  top: 0;
+  text-align: center;
+  background: #FED300;
+  bottom: 0;
   right: 0;
-  width: auto;
+  width: 34.1%;
   height: 45px;
-  border-bottom:15px solid #262727;
+  z-index: 999999999;
+  color: #313335;
 }
 .prijsText{
   margin:0;
@@ -41,8 +47,8 @@
   right: 10%;
 }
 .header-boven-contact-logo{
-  width: 200%;
-  margin-left:8%;
+  width: 80%;
+
 }
 .header-title{
   position: absolute;
@@ -105,8 +111,7 @@
 }
 .ropdown-menu{}
 .dropdown-toggle{
-      color: #fff;
-      padding:0 22px;
+      color: #313335;
 }
 .dropdown-menu{
   display: none; 

@@ -15,7 +15,7 @@ Template Name: App page
 				<aside class="u-gridCol4">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/iphone6.png" class="App-iphone" />
 				</aside>
-					<article class="Content-article u-gridCol8" id="post-<?php the_ID(); ?>">
+					<article class="Content-article u-gridCol8 app-article" id="post-<?php the_ID(); ?>">
 						<?php // the_content(); ?>
 						Bekijk nu ook de informatie van ons bedrijf vanuit de app! De app is beschikbaar in de Google Play store voor Android apparaten. 
 						<a href="#"><img class="image-google"src="<?php echo get_stylesheet_directory_uri(); ?>/img/googleplay.jpg" /></a>
@@ -23,10 +23,10 @@ Template Name: App page
 							<img class="image-qr"src="<?php echo get_stylesheet_directory_uri(); ?>/img/placeholder_qr_code.jpg" />
 						<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 					</article> 
-
-				</div> <!-- content-text -->
+ 
+				</div> <!-- content-text -->  
 			</div>
-		</article>
+		</article> 
 	<?php endwhile; endif; ?>
 	</div>
 

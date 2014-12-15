@@ -19,10 +19,12 @@
     <!-- Automate reverse linking (pingbacks) -->
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
     <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
     <!-- Favicons -->
-    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri(); ?>/apple-touch-icon.png">
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri(); ?>/img/app.jpg">
 
     <!-- build:remove:expanded -->
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/production.min.css">
@@ -42,34 +44,24 @@
 
   </head>
   <body <?php body_class(); ?> >
-<div class="container-all u-gridContainer">
+<div class="container-all ">
 <!-- header -->
 <!-- ------------------------------------------------------------------------------------------------------------------- -->
 
 <!-- boven header -->
 <!-- ------------------------------------------------------------------------------------------------------------------- -->
 <header class="header-boven">
+    <div class="header-boven-contact-back">
     <div class="header-boven-contact u-gridContainer u-gridRow">
-		<div class="top-profile">
-			<div id="shoppingcart"></div>
-            <!--<p class="prijsText">€ 00,00 </p>
-            <a href="#"><img class="shop-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/winkel.png" ></a>
-            <a href="#"><img class="profile-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/img/profile.png" ></a>!-->
-        </div>
-        <div class="header-boven-contact-wrapper1 u-gridCol4"
+        <div class="header-boven-contact-wrapper1 u-gridCol8"
             <a href="#"><img class="header-boven-contact-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" ></a>
         </div>
-        <p class="header-title">Heeft u vragen ? bel ons direct <a href="tel:08002929927">0800 2929927</a> of mail naar <a href="mailto:info@ladderensteigerkoning.nl">info@ladderensteigerkoning.nl</a></p>
+        <div class="top-profile u-gridCol4">
+            <div id="shoppingcart"></div>
+        </div>
 
-       <!--<div class="header-boven-contact-wrapper2 u-gridCol8">
-            <div class="u-gridRow">
-                <img class="nummer-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/ico/tel.svg">
-                <a class="header-boven-contact-nummer u-gridCol6" href="#">hier moet het nummer</a>
-                <img class="email-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/ico/mail.svg">
-                <a class="header-boven-contact-email u-gridCol6"  href="#">hier moet het email adres</a>
-            </div>
-        </div>-->
     </div>
+</div>
 </header> 
 <!-- ------------------------------------------------------------------------------------------------------------------- -->
 <!-- Hier stopt de bovenkant van de header -->
@@ -80,6 +72,7 @@
 <!-- ------------------------------------------------------------------------------------------------------------------- -->
 <nav class="header-midden"> <!-- midden header  navigatie-->
     <nav class="Bot-Nav ">
+        <div class="header-midden-nav-back">
         <div class="u-gridContainer header-midden-nav">
             <div class="Nav-toggle u-cf">
                 <a class="Navigation-menuToggle" id="js-navCollapse">
@@ -92,7 +85,7 @@
             <?php include 'includes/navigation.php'; ?>
             
             <div class="Mob-contact-ico">
-                <a class="Button Button--transparent u-textInverted u-noLine telsvg" href="tel:08002929927">
+                <a class="Button Button--transparent u-textInverted u-noLine telsvg" href="tel:0165561424">
                     <svg class="Icon Icon--inline" viewBox="0 0 128 128">
                         <use xlink:href="#icon-phone"></use> 
                     </svg>
@@ -105,6 +98,7 @@
                 </a>
             </div>
         </div>
+    </div>
     </nav>         
 </nav>
 <!-- ------------------------------------------------------------------------------------------------------------------- -->

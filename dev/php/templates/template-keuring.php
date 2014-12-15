@@ -8,8 +8,8 @@ Template Name: Keuring
 
 	<div class="home-wrapper">
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		<article class="Content Content--home" id="post-<?php the_ID(); ?>">
-			<article class="u-gridRow  home-content een-content">
+		<article class="Content Content--home " id="post-<?php the_ID(); ?>">
+			<article class="u-gridRow  home-content u-gridContainer">
 				<div class="u-gridCol4 home-content-in">
 					<img class="col-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/checkmark.png" >
 				</div>
@@ -20,7 +20,7 @@ Template Name: Keuring
 				<a href="#" class="assortiment-link-scroll assortiment-link">Maak uw afspraak</a>
 			</article>
 
-			<article class="u-gridRow  home-content twee-content">
+			<article class="u-gridRow  home-content u-gridContainer">
 				<div class="u-gridCol8 home-content-in">
 					<h4>Keuring klimmateriaal</h4>
 					<p> Bij bezoek aan U firma voor keuring van klimmateriaal geldt:<br />
@@ -32,7 +32,7 @@ Template Name: Keuring
 				<a href="#" class="assortiment-link-scroll assortiment-link">Maak uw afspraak</a>
 			</article>
 
-			<article class="u-gridRow  home-content drie-content">
+			<article class="u-gridRow  home-content u-gridContainer">
 				<div class="u-gridCol4 home-content-in">
 						<img class="col-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/handgereedschap.jpg" >
 				</div>
@@ -43,7 +43,7 @@ Template Name: Keuring
 				<a href="#" class="assortiment-link-scroll assortiment-link">Maak uw afspraak</a>
 			</article>
 
-			<article class="u-gridRow  home-content vier-content">
+			<article class="u-gridRow  home-content u-gridContainer">
 				<div class="u-gridCol6 home-content-in">
 						<h4>Advies</h4>
 						<p>Wij adviseren om voor het volgende jaar een nieuwe afspraak te maken daar het vaak erg moeilijk is om alle materialen op een vooraf bepaalde datum op de zaak te hebben liggen. Veel van onze klanten geven dan ook voorkeur op het zelf maken van een vervolgafspraak circa 10 werkdagen voor daadwerkelijke inspectie.</p>
@@ -56,7 +56,7 @@ Template Name: Keuring
 				<a href="#" class="assortiment-link-scroll assortiment-link">Maak uw afspraak</a>
 			</article>
 
-			<article class="u-gridRow  home-content vijf-content">
+			<article class="u-gridRow  home-content u-gridContainer">
 				<div class="u-gridCol6 home-content-in">
 						<h4>Actie</h4>
 						<p>Let op: Voor keuring en inspectie kent de Steigerkoning BV de eerste en de laatste twee maanden van het jaar een speciaal tarief van slechts 35,00 euro per uur.</p>
@@ -73,10 +73,12 @@ Template Name: Keuring
 				<a href="#" class="assortiment-link-scroll assortiment-link">Maak uw afspraak</a>
 			</article>
 
-			<div class="u-gridRow home-content-form">						
+			<div class="home-content-form">						
 						<p class="contact-page-p">Afspraak of vragen? Neem dan hieronder contact met ons op. </p>
+						<div class="u-gridContainer">
 						<?php the_content(); ?>
 						<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
+					</div>
 			</div>
 				<!--<div>
 					<?php the_content(); ?>

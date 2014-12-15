@@ -16,7 +16,8 @@
   background-color: transparent;
   border: 3px solid $base-borderColor1;
   cursor: pointer;
-  float: right;    
+  float: right;  
+  margin-right:8px;  
 	&:hover {
 		//	background-color: #fafafa;
 	}
@@ -66,6 +67,7 @@
 
 	 .Bot-Nav {
 		height: auto;
+		position: relative;
 	 }
 	 #js-navCollapse {
 		display: block;
@@ -154,11 +156,11 @@
 		display: block;
 		z-index: 5000;
 		position: absolute;
-		top: 171px;
+		top: 10px;
 
 
 		a { 
-			border: 2px solid black;
+			border: 2px solid #FED300;
 			position: absolute;
 			display: block;
 			width: 35px;
@@ -166,7 +168,7 @@
 			border-radius: 7px;
 			background-color: transparent;
 			.Icon--inline {
-				fill: black;
+				fill: #FED300;
 				width: 2em;
 				height: 3em;
 				padding-bottom: 1em;				
@@ -204,9 +206,17 @@
     display: none;
   }
 }
+@media all and (max-width: 1040px) { 
+	.Navigation-link{
+		padding:0;
+	}
+	.Navigation-listItem{
+		padding: 0;
+	}
+}
 @media all and (max-width: 768px) { 
 	.Mob-contact-ico {
-		top: 145px;
+
 	}
 	.header-title {
 		bottom: -57%;
@@ -214,12 +224,11 @@
 }
 @media all and (max-width: 667px) { 
 	.Mob-contact-ico {
-		top: 150px;
+
 	}
 }
 @media all and (max-width: 600px) { 
 	.Mob-contact-ico {
-		top: 129px;
 	}
 	.header-title {
     	bottom: -57%;
@@ -231,7 +240,7 @@
 }
 @media all and (max-width: 568px) { 
 	.Mob-contact-ico {
-		top: 125x;
+
 	}
 }
 @media all and (max-width: 500px) { 
@@ -247,7 +256,7 @@
 }
 @media all and (max-width: 414px) { 
 	.Mob-contact-ico {
-		top: 110px;
+
 	}
   .header-boven-contact-logo{
 	width: 46% !important;
@@ -271,7 +280,7 @@
   	width: 40% !important;
   }
 	.Mob-contact-ico {
-		top: 103px;
+
 	}
   .logo-bot {
     margin-top: 20px;
@@ -280,7 +289,7 @@
 }
 @media all and (max-width: 320px) { 
 	.Mob-contact-ico {
-		top: 98px;
+
 	}
 	.top-profile{
 		font-size: 11px;
