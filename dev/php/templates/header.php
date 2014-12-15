@@ -14,7 +14,7 @@
     <title><?php wp_title( '|', true, 'right' ); ?><?php echo get_bloginfo( 'name' ); ?></title>
 
     <!-- Mobile devices -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
 
     <!-- Automate reverse linking (pingbacks) -->
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
