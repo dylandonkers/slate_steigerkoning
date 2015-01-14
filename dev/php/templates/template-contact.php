@@ -20,7 +20,7 @@ Template Name: Contactpage
 								<p>Vijfhuizenberg 121</p>
 								<p>4708 AJ Roosendaal</p>
 								<p><a href="mailto:info@ladderensteigerkoning.nl">Email: info@ladderensteigerkoning.nl</a></p>
-								<p><a href="tel:08002929927">Tel: 0800 2929927</a></p>
+								<p><a href="tel:0165561424">Tel: 0165-561424</a></p>
 							</div>
 	
 						</div>					

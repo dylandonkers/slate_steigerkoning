@@ -18,4 +18,4 @@ Template Name: checkout
 	<?php endwhile; endif; ?>
 	</div>
 
-<?php get_footer(); ?>
+<?php get_footer(); ?> 

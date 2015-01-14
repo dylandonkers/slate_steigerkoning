@@ -52,6 +52,7 @@
 
 
 @media all and (max-width: 1040px) {
+	
 	.Nav-tel {
 		display: none;
 	 }
@@ -220,6 +221,11 @@
 	}
 	.header-title {
 		bottom: -57%;
+	}
+}
+@media all and (max-width: 700px) { 
+.home-top-ul{
+		margin-top:0px!important;
 	}
 }
 @media all and (max-width: 667px) { 
