@@ -20,7 +20,7 @@
 						<li><h4>Openingstijden</h4></li>
 						<li>Ma t/m Vr 07:30 - 17:30</li>
 						<li>Za 10:00 - 16:00</li>
-						<li>Zo Gesloten</li>
+						<li>Zo Gesloten</li> 
 					</ul>
 				</div>
 				<div class="u-gridCol4">
