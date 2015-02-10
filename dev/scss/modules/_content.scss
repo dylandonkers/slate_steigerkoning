@@ -93,17 +93,17 @@ margin: 0;
 .home-top-ul{
 	margin-top:40px!important;
 	li{
-	color: #fff;
-	padding: 5% 0 5% 20%;
-	border-top: solid 2px #fff;
-	text-transform: uppercase; 
+		color: #fff;
+		padding: 5% 0 5% 20%;
+		border-top: solid 0px #fff;
+		text-transform: uppercase; 
 		p{
-			 margin-left: 45px;
-   			 margin-top: -26px;
-			}
+			margin-left: 45px;
+			margin-top: -26px;
+		}
 	}
 	li:last-child{
-		border-bottom: solid 2px #fff;
+		border-bottom: solid 0px #fff;
 	}
 }
 .home-content-box{

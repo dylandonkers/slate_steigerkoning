@@ -139,12 +139,13 @@
 		min-height: 400px;
 		div.row-fluid{
 			div.span12{
+				margin-top: 60px;
 				p{
 				width: 100%;
 				}
-				p.product-productnr{
-				margin-top: 82px;
-				}
+				//p.product-productnr{
+				//margin-top: 82px; 
+				//}
 				p.product-price{
 					width: 23.6%;
 				}
@@ -276,17 +277,19 @@
 	}
 }
 // afreken pagina ---------------------------------------------------------------------------------
+
 #post-19 {
-	 .row-fluid .checkout{
+	.row-fluid .checkout{
 		padding:0 2%;
 	}
-	 .row-fluid .checkout-table{
+	.row-fluid .checkout-table{
+
 		width: 100%;
 		thead{
 			text-align: left;
 		}
 	}
-	fieldset > div:nth-of-type(1) {
+	fieldset .row-fluid > div:nth-of-type(1) {
 		padding:0 1%;
 		> h3{
 			width: 100%;
@@ -298,7 +301,7 @@
 			
 		} 
 	}
-	fieldset  > div.checkout-right > div:nth-of-type(5) > div  {
+	fieldset .row-fluid > div.checkout-right > div:nth-of-type(5) > div  {
 		border-right: none !important;
 		h3{
 			background: #323335;
@@ -324,10 +327,10 @@
 		background: #323335;
 		color: #fff;
 	}
-	fieldset > div.span6.checkout-right > div:nth-child(3){
+	fieldset .row-fluid > div.span6.checkout-right > div:nth-child(3){
 		clear: left; 
 	}
-	fieldset > div.span6.checkout-right > div:nth-child(odd){
+	fieldset .row-fluid > div.span6.checkout-right > div:nth-child(odd){
 		> div:nth-child(1){
 			
 		}
@@ -335,7 +338,7 @@
 			padding:0 2% 3% 2%;
 		}
 	}
-	fieldset > div.span6.checkout-right > div:nth-child(even) > div{
+	fieldset .row-fluid > div.span6.checkout-right > div:nth-child(even) > div{
 		h3{
 			padding-left:5%;
 		}
@@ -343,7 +346,7 @@
 			padding:0% 4% 3% 6%;
 		}
 	}
-	fieldset > div.span6.checkout-right > div:nth-child(-n+4){
+	fieldset .row-fluid > div.span6.checkout-right > div:nth-child(-n+4){
 		float: left;
 		width: 50%;
 		.control-group{
@@ -363,7 +366,7 @@
 			border-bottom: 2px solid #323335;
 		}
 	}
-	fieldset{
+	fieldset .row-fluid{
 		border:0;
 		div.span6{
 			width: 100%;

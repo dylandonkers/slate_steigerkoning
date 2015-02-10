@@ -16,11 +16,12 @@ Template Name: Contactpage
 					<div class="u-gridRow">					
 						<div class="adress u-gridCol4">
 							<div class="adress-info">
-								<p>De steigerkoning</p>
+								<p>De Steigerkoning BV</p>
 								<p>Vijfhuizenberg 121</p>
 								<p>4708 AJ Roosendaal</p>
 								<p><a href="mailto:info@ladderensteigerkoning.nl">Email: info@ladderensteigerkoning.nl</a></p>
 								<p><a href="tel:0165561424">Tel: 0165-561424</a></p>
+								<p><a href="tel:0765032665">Tel: 076-5032665</a></p>
 							</div>
 	
 						</div>					

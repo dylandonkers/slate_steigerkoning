@@ -1,0 +1,170 @@
+-ladderdoppen kopieren 
+
+- ZZP lijn
+- Particulier
+- Basic line
+- VCA lijn
+
+regenreductiegaas toevoegen
+
+
+
+occasion in categorie toevoegen
+
+- daghuur
+
+- ladders en trappen
+
+
+dag -> weekprijs = maal 2,1
+
+hoogwerkers = maal 3
+
+
+week -> maandprijs = (weekprijs - 0.8) x 4
+
+
+stalen steigermaterialen, altijd maal 30 dev prijs
+
+
+prijzen zijn excl
+
+
+retourvoorwaarden oude site
+
+
+
+#====== query
+
+
+# Creëer Weekprijs:
+# ==================
+# insert een ProductOption/ProductOptionValue voor elk product
+#	- Uit de categorie die subcategorie is van verhuur
+# Koppel dit aan het product
+
+# De waarde van de meerprijs is:
+# gewone prijs * 2.1 - gewone prijs 
+
+
+#Insert PO
+INSERT INTO ProductOption (SaasCustomer_id, optionName, optionDescription, influencesSKU)
+	SELECT 25, 'Huren per', CONCAT(p.Product_id, ' - Dag/Week/Maandprijs ', p.productName), 'true'
+	 FROM Product p 
+	 INNER JOIN Category_categoryProducts_Product cp ON cp.Product_id = p.Product_id
+	 INNER JOIN Category c ON c.Category_id = cp.Category_id
+	 WHERE 
+	 p.SaasCustomer_id = 25
+	 AND c.Parent_id = 1295
+	 AND NOT EXISTS (SELECT pos.ProductOption_id 
+		 FROM Product_productOptions_ProductOption pos
+		 INNER JOIN ProductOption po2 ON po2.ProductOption_id = pos.ProductOption_id
+		 WHERE pos.Product_id = p.Product_id AND po2.optionName = 'Huren per')
+
+# Insert POV dagprijs, meerprijs 0,-
+# NB: does not insert if there already is a optionValue called 'dag'
+INSERT INTO ProductOptionValue (SaasCustomer_id, optionValue, ProductOption_id, extraPrice)
+	SELECT 25, 'dag', po.ProductOption_id, 0 
+	 FROM ProductOption po 
+	 WHERE 
+		po.SaasCustomer_id = 25 AND po.optionName = 'Huren per'
+		AND NOT EXISTS 
+		(SELECT pov.ProductOption_id 
+		 FROM ProductOptionValue pov
+		 WHERE pov.ProductOption_id = po.ProductOption_id
+		 AND   pov.optionValue = 'dag' );
+
+
+# Insert POV weekprijs, meerprijs 0,-
+# NB: does not insert if there already is a optionValue called 'week'
+# NB2: Does not calculate the correct price just yet
+INSERT INTO ProductOptionValue (SaasCustomer_id, optionValue, ProductOption_id, extraPrice)
+	SELECT 25, 'week', po.ProductOption_id, 0
+	 FROM ProductOption po 
+	 WHERE 
+		po.SaasCustomer_id = 25 AND po.optionName = 'Huren per'
+		AND NOT EXISTS 
+		(SELECT pov.ProductOption_id 
+		 FROM ProductOptionValue pov
+		 WHERE pov.ProductOption_id = po.ProductOption_id
+		 AND   pov.optionValue = 'week');
+
+
+# Insert POV 4 weken prijs, meerprijs 0,-
+# NB: does not insert if there already is a optionValue called '4 weken'
+# NB2: Does not calculate the correct price just yet
+INSERT INTO ProductOptionValue (SaasCustomer_id, optionValue, ProductOption_id, extraPrice)
+	SELECT 25, '4 weken', po.ProductOption_id, 0 
+	 FROM ProductOption po 
+	 WHERE 
+		po.SaasCustomer_id = 25 AND po.optionName = 'Huren per'
+		AND NOT EXISTS 
+		(SELECT pov.ProductOption_id 
+		 FROM ProductOptionValue pov
+		 WHERE pov.ProductOption_id = po.ProductOption_id
+		 AND   pov.optionValue = '4 weken');
+
+INSERT INTO Product_productOptions_ProductOption (Product_id, ProductOption_id) 
+SELECT SUBSTRING(po.optionDescription, 1, 6), ProductOption_id 
+ FROM ProductOption po 
+ WHERE po.optionName = 'Huren per'
+ AND po.SaasCustomer_id = 25
+ AND po.optionDescription LIKE '%Dag/Week/Maandprijs%';
+
+#update week prices
+UPDATE ProductOptionValue pov
+	INNER JOIN ProductOption po ON po.ProductOption_id = pov.ProductOption_id
+	INNER JOIN Product_productOptions_ProductOption pop ON pop.ProductOption_id = po.ProductOption_id
+	INNER JOIN Product p ON p.Product_id = pop.Product_id
+SET pov.extraPrice = p.productPrice * 2.1 - p.productPrice
+WHERE
+	po.optionName = 'Huren per'
+AND pov.optionValue = 'week'
+AND po.SaasCustomer_id = 25;
+
+#update 4 weken prices
+UPDATE ProductOptionValue pov
+	INNER JOIN ProductOption po ON po.ProductOption_id = pov.ProductOption_id
+	INNER JOIN Product_productOptions_ProductOption pop ON pop.ProductOption_id = po.ProductOption_id
+	INNER JOIN Product p ON p.Product_id = pop.Product_id
+# 80% of weekprice times 4
+SET pov.extraPrice = ((p.productPrice * 2.1) * 0.8 * 4) - p.productPrice
+WHERE
+	po.optionName = 'Huren per'
+AND pov.optionValue = '4 weken'
+AND po.SaasCustomer_id = 25;
+
+
+
+
+
+
+
+#update week prices of Hoogwerkers to factor 3
+UPDATE ProductOptionValue pov
+	INNER JOIN ProductOption po ON po.ProductOption_id = pov.ProductOption_id
+	INNER JOIN Product_productOptions_ProductOption pop ON pop.ProductOption_id = po.ProductOption_id
+	INNER JOIN Product p ON p.Product_id = pop.Product_id
+	INNER JOIN Category_categoryProducts_Product cp ON cp.Product_id = p.Product_id
+	INNER JOIN Category c ON cp.Category_id = c.Category_id
+SET pov.extraPrice = p.productPrice * 3 - p.productPrice
+WHERE
+	po.optionName = 'Huren per' AND
+	c.Parent_id = 1316
+AND pov.optionValue = 'week'
+AND po.SaasCustomer_id = 25;
+
+#update 4weeks prices of hoogwerkers again
+UPDATE ProductOptionValue pov
+	INNER JOIN ProductOption po ON po.ProductOption_id = pov.ProductOption_id
+	INNER JOIN Product_productOptions_ProductOption pop ON pop.ProductOption_id = po.ProductOption_id
+	INNER JOIN Product p ON p.Product_id = pop.Product_id
+	INNER JOIN Category_categoryProducts_Product cp ON cp.Product_id = p.Product_id
+	INNER JOIN Category c ON cp.Category_id = c.Category_id
+# 80% of weekprice times 4
+SET pov.extraPrice = ((p.productPrice * 3) * 0.8 * 4) - p.productPrice
+WHERE
+	po.optionName = 'Huren per' AND
+	c.Parent_id = 1316
+AND pov.optionValue = '4 weken'
+AND po.SaasCustomer_id = 25;
