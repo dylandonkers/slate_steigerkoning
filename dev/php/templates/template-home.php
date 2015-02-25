@@ -51,7 +51,7 @@ Template Name: Homepage
   							<legend>Montage</legend>
  						</fieldset>
  						<canvas class="background-thunb-title"></canvas>
-	 					<a href="/montage"class="home-content-thunb-title">Meer</a>
+	 					<a href="/monteren"class="home-content-thunb-title">Meer</a>
 	 				</article>
 	 			</div>
 	 			<div class="u-gridCol12 u-gridRow">

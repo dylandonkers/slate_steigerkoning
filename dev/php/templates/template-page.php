@@ -84,7 +84,7 @@ Template Name: page
 				<a  class="u-gridCol3" target="_blank"   href="http://ladderensteigerkoning.lijktmeduidelijk.nl/files/2014/11/CCE04072014.pdf">
 					<div class="pdf-box">	
 						<img  class="pdf-box-img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/pdf.png" >
-				 		<p>CCE04072014</p>
+				 		<p>Opbouwinstruktie Aluminium schoorsteensteiger</p>
 					</div>
 				</a>
 
