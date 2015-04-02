@@ -12,7 +12,8 @@
 						<li><a href="mailto:info@ladderensteigerkoning.nl">info@ladderensteigerkoning.nl</a></li>
 						<li>KvK: 20074322</li>
 						<li>Btw nr.: 8100 10975 B01</li>
-						<li><a  class="u-gridCol3 footer-link" target="_blank"   href="http://ladderensteigerkoning.lijktmeduidelijk.nl/files/2014/11/Algemene_Voorwaarden.pdf">Algemene voorwaarden</a></li>
+						<li><a  class="u-gridCol3 footer-link" target="_blank"   href="/files/2014/11/Algemene_Voorwaarden.pdf">Algemene voorwaarden</a></li>
+						<li><a  class="u-gridCol3 footer-link" target="_blank"   href="/voorwaarden-schadeafkoop-en-branddiefstalregeling/">Voorwaarden schadeafkoop en brand/diefstal regeling</a></li>
 					</ul>
 				</div>
 				<div class="u-gridCol4">
